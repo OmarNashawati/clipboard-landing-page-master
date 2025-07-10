@@ -1,0 +1,39 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0 , 0%, 0%);
+
+  /* Primary */
+  --green-500: hsl(171, 66%, 44%);
+  --blue-100: hsl(233, 100%, 69%);
+
+  /* Neutral */
+  --gray-700: hsl(210, 10%, 33%);
+  --gray-500: hsl(201, 11%, 66%);
+
+  --primary: var(--green-500);
+  --secondary: var(--blue-100);
+  --bg: var(--white);
+  --text: var(--gray-700);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  transition: color 0.5s, background-color 0.5s;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
