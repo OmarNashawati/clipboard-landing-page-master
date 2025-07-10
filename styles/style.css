@@ -1,11 +1,162 @@
 @import './base.css';
 
 
+.header-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  background-image: url(../images/bg-header-desktop.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo {
+  width: 80px;
+}
+
+.header-title{
+  font-size: 2.5rem;
+  margin-bottom: 2rem ;
+}
+
+.header-description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.section-header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+}
+
+.section-description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.top-section{
+  display: flex;
+  flex-direction: row;
+}
+
+.section-content{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.top-section-img {
+  width: 70%;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+.content-list li .title {
+
+}
+
+.content-list li .discription {
+
+}
+
+.tools-list{
+  display: flex;
+  gap: 1rem;
+}
+
+.tool-item {
+  flex: 1 1 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tool-tille { padding: 1rem 0;}
+.tool-discription {}
 
 
+.companies-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem 1rem;
+}
+
+.company-logo{
+  flex: 1 1 180px;
+}
 
 
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.footer-logo {
+  width: 60px;
+}
+
+.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  margin: 0 1rem;
+}
+
+.footer-links .link{
+  padding: 10px ;
+  color: var(--text);
+}
+
+.footer-links .link:hover{color: var(--primary);}
+
+.social-media-links{
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.icon:hover {
+   filter: invert(59%) sepia(76%) saturate(384%) hue-rotate(121deg) brightness(87%) contrast(91%);
+}
+
+.icon-facebook {
+  background-image: url(../images/icon-facebook.svg);
+}
+.icon-twittrer {
+  background-image: url(../images/icon-twitter.svg);
+}
+.icon-instagram {
+  background-image: url(../images/icon-instagram.svg);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

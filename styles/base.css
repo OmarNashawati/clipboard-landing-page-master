@@ -3,7 +3,9 @@
   --black: hsl(0 , 0%, 0%);
 
   /* Primary */
+  --green-300: hsl(171, 66%, 70%);
   --green-500: hsl(171, 66%, 44%);
+  --blue-50: hsl(233, 100%, 80%);
   --blue-100: hsl(233, 100%, 69%);
 
   /* Neutral */
@@ -11,7 +13,10 @@
   --gray-500: hsl(201, 11%, 66%);
 
   --primary: var(--green-500);
+  --primary-hover: var(--green-300);
   --secondary: var(--blue-100);
+  --secondary-hover: var(--blue-50);
+
   --bg: var(--white);
   --text: var(--gray-700);
 }
@@ -32,8 +37,53 @@ body {
   transition: color 0.5s, background-color 0.5s;
   font-size: 18px;
   font-weight: 400;
+  /* line-height: 1; */
   font-family: "Bai Jamjuree", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.p-sm {padding: 1rem;}
+.p-md {padding: 2rem;}
+.p-lg {padding: 3rem;}
+
+.p-x-sm {padding: 0 1rem;}
+.p-x-md {padding: 0 2rem;}
+.p-x-lg {padding: 0 3rem;}
+
+.p-y-sm {padding: 1rem 0;}
+.p-y-md {padding: 2rem 0;}
+.p-y-lg {padding: 3rem 0;}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  margin: 0 10px;
+  color: var(--white);
+  background: var(--gray-500);
+  cursor: pointer;
+}
+
+.btn--primary {background-color: var(--primary);}
+.btn--secondary {background-color: var(--secondary);}
+
+.btn--primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn--secondary:hover {
+  background-color: var(--secondary-hover);
 }
